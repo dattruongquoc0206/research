@@ -1,0 +1,6 @@
+KDDTrain+.txt filter=lfs diff=lfs merge=lfs -text
+KDDTest1.jpg filter=lfs diff=lfs merge=lfs -text
+KDDTest-21.txt filter=lfs diff=lfs merge=lfs -text
+KDDTest+.txt filter=lfs diff=lfs merge=lfs -text
+KDDTrain1.jpg filter=lfs diff=lfs merge=lfs -text
+KDDTrain+_20Percent.txt filter=lfs diff=lfs merge=lfs -text
