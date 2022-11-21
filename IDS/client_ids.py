@@ -2,7 +2,7 @@ import socket
 from time import sleep
 import numpy as np
 
-test_file = np.loadtxt("testing.txt")
+#test_file = np.loadtxt("testing.txt")
 
 #def main():
 s = socket.socket()

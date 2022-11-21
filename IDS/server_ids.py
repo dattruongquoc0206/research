@@ -1,9 +1,11 @@
 import socket
-from tensorflow.keras.models import load_model
+import tensorflow as tf
+
+from tensorflow import keras
 import numpy as np
 
 test_file = np.loadtxt("testing.txt")
-model1  = load_model('model1.h5')
+model1= tf.keras.models.load_model('model1.h5')
 
 s = socket.socket()
 s.bind(('127.0.0.1',4444))
@@ -20,7 +22,7 @@ index = int(result.decode('utf-8'))
 
 data = test_file[index].reshape(1,78)
 
-pred1  = model1.predict(data)
+pred1= model1.predict(data)
 y_classes = pred1.argmax(axis=-1)
 # print(y_classes)
 if(y_classes==0):
